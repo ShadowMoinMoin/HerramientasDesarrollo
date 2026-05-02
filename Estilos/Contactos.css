@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.contact-hero {
+    margin-top: 80px;
+    height: 40vh;
+    background: url('../img/contacto.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero .overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-hero h2 {
+    font-size: 40px;
+    color: #f4a261;
+}
+
+/* PAGE */
+.contact-page {
+    padding: 80px 20px;
+}
+
+.contact-grid {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FORM */
+.contact-form {
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form h3 {
+    color: #f4a261;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f4a261;
+    outline: none;
+}
+
+/* INFO */
+.contact-info {
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.contact-info h3 {
+    color: #f4a261;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: #f4a261;
+}
+
+/* MAPA */
+.mapa {
+    margin-top: 60px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #f4a261;
+    transition: 0.3s;
+}
+
+/* Hover elegante */
+.contact-info p:hover .icon svg {
+    fill: #e76f51;
+    transform: scale(1.2);
+}

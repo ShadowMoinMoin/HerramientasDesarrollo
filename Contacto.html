@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos/Styles.css">
+    <link rel="stylesheet" href="Estilos/Contactos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Los Pollos Vecinos</h1>
+            <ul class="menu">
+                <li><a href="Principal.html">Inicio</a></li>
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Reservas.html">Reservas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="#" id="abrir-carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <div class="overlay">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte</p>
+        </div>
+    </section>
+
+    <section class="contact-page">
+
+        <div class="contact-grid">
+
+            <form class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Asunto">
+                <textarea rows="5" placeholder="Mensaje..." required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Información</h3>
+                <p>
+                    <span class="icon">
+                        <!-- Ubicación -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 
+                0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5 14.5 7.6 14.5 9 13.4 11.5 12 11.5z" />
+                        </svg>
+                    </span>
+                    Av. Huancavelica 963
+                </p>
+
+                <p>
+                    <span class="icon">
+                        <!-- Teléfono -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.3 6.3l2.1-2.1c.3-.3.7-.4 
+                1-.3 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 
+                1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 
+                1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 
+                2.4.6 3.5.1.3 0 .7-.3 1l-2.2 2.3z" />
+                        </svg>
+                    </span>
+                    +51 908986385
+                </p>
+
+                <p>
+                    <span class="icon">
+                        <!-- Email -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 
+                2v12c0 1.1.9 2 2 2h16c1.1 0 
+                2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
+                4-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </span>
+                    u22209741@utp.edu.pe
+                </p>
+
+                <p>
+                    <span class="icon">
+                        <!-- Reloj -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.5 2 2 6.5 2 
+                12s4.5 10 10 10 10-4.5 
+                10-10S17.5 2 12 2zm1 
+                11h-5V7h2v4h3v2z" />
+                        </svg>
+                    </span>
+                    12:00 - 23:00
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps?q=ElTambo&output=embed" loading="lazy">
+            </iframe>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <li style="--clr: #1877f2">
+                    <a data-url="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li style="--clr: #ff0000">
+                    <a data-url="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li style="--clr: #1da1f2">
+                    <a data-url="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li style="--clr: #c32aa3">
+                    <a data-url="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li style="--clr: #25d366">
+                    <a data-url="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="JavaScript/Contacto.js"></script>
+</body>
+
+</html>

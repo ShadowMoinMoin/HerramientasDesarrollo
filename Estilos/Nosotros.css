@@ -1,0 +1,124 @@
+/* HERO */
+.about-hero {
+    margin-top: 80px;
+    height: 50vh;
+    background: url('../img/nosotros-bg.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero .overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-hero h2 {
+    font-size: 40px;
+    color: #f4a261;
+}
+
+/* HISTORIA */
+.about-section {
+    padding: 80px 20px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-content .text {
+    max-width: 400px;
+}
+
+.about-content h3 {
+    color: #f4a261;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.6;
+}
+
+.about-content .image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* VALORES */
+.valores {
+    padding: 80px 20px;
+    text-align: center;
+    background: #1c1c1c;
+}
+
+.valores h3 {
+    color: #f4a261;
+    margin-bottom: 40px;
+}
+
+.valores-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.valor {
+    width: 220px;
+}
+
+.valor .icon {
+    width: 40px;
+    margin: auto;
+}
+
+.valor svg {
+    fill: #f4a261;
+}
+
+/* EQUIPO */
+.equipo {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.equipo h3 {
+    color: #f4a261;
+    margin-bottom: 40px;
+}
+
+.equipo-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    width: 200px;
+}
+
+.miembro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.miembro h4 {
+    margin-top: 10px;
+    color: #f4a261;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

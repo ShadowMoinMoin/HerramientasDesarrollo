@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pollos Vecinos</title>
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Estilos/Styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Los Pollos Vecinos</h1>
+            <ul class="menu">
+                <li><a href="Principal.html">Inicio</a></li>
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Reservas.html">Reservas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="#" id="abrir-carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="explore">
+        <h2>Nuestra Carta</h2>
+        <div class="tabs">
+            <button class="active" data-categoria="todos">Todos</button>
+            <button data-categoria="principal">Platos Principales</button>
+            <button data-categoria="acompanamiento">Acompañamientos</button>
+            <button data-categoria="entrada">Entradas</button>
+            <button data-categoria="bebida">Bebidas</button>
+            <button data-categoria="postre">Postres</button>
+        </div>
+        <div class="gallery">
+            <div class="grid-productos">
+                <div class="item principal card">
+                    <img src="Imágenes/Brasa.jpg" alt="PolloALaBrasa">
+                    <h3>Pollo a la Brasa</h3>
+                    <p>S/ 22.50</p>
+                    <button class="agregar-carrito" data-nombre="Pollo a la Brasa" data-precio="22.50">Agregar</button>
+                </div>
+                <div class="item principal card">
+                    <img src="Imágenes/Broaster.jpg" alt="PolloBroaster">
+                    <h3>Pollo Broaster</h3>
+                    <p>S/ 17.50</p>
+                    <button class="agregar-carrito" data-nombre="Pollo Broaster" data-precio="17.50">Agregar</button>
+                </div>
+                <div class="item principal card">
+                    <img src="Imágenes/Parrilla.jpg" alt="PolloALaParrilla">
+                    <h3>Pollo a la Parrilla</h3>
+                    <p>S/ 18.00</p>
+                    <button class="agregar-carrito" data-nombre="Pollo a la Parrilla" data-precio="18.00">Agregar</button>
+                </div>
+                <div class="item acompanamiento card">
+                    <img src="Imágenes/Papas.jpeg" alt="PapasFritas">
+                    <h3>Papas Fritas</h3>
+                    <p>S/ 9.00</p>
+                    <button class="agregar-carrito" data-nombre="Papas Fritas" data-precio="9.00">Agregar</button>
+                </div>
+                <div class="item acompanamiento card">
+                    <img src="Imágenes/Ensalada.jpg" alt="Ensalada">
+                    <h3>Ensalada</h3>
+                    <p>S/ 25.00</p>
+                    <button class="agregar-carrito" data-nombre="Ensalada" data-precio="25.00">Agregar</button>
+                </div>
+                <div class="item acompanamiento card">
+                    <img src="Imágenes/Arroz.jpg" alt="Arroz">
+                    <h3>Arroz</h3>
+                    <p>S/ 15.00</p>
+                    <button class="agregar-carrito" data-nombre="Arroz" data-precio="15.00">Agregar</button>
+                </div>
+                <div class="item entrada card">
+                    <img src="Imágenes/AlitasBBQ.jpg" alt="AlitasBBQ">
+                    <h3>Alita sBBQ</h3>
+                    <p>S/ 27.50</p>
+                    <button class="agregar-carrito" data-nombre="Alitas BBQ" data-precio="27.50">Agregar</button>
+                </div>
+                <div class="item entrada card">
+                    <img src="Imágenes/Nuggets.jpg" alt="Nuggets">
+                    <h3>Nuggets</h3>
+                    <p>S/ 10.00</p>
+                    <button class="agregar-carrito" data-nombre="Nuggets" data-precio="10.00">Agregar</button>
+                </div>
+                <div class="item bebida card">
+                    <img src="Imágenes/Gaseosa.jpg" alt="Gaseosa">
+                    <h3>Gaseosa</h3>
+                    <p>S/ 8.00</p>
+                    <button class="agregar-carrito" data-nombre="Gaseosa" data-precio="8.00">Agregar</button>
+                </div>
+                <div class="item bebida card">
+                    <img src="Imágenes/Chicha.jpg" alt="ChichaMorada">
+                    <h3>Chicha Morada</h3>
+                    <p>S/ 12.00</p>
+                    <button class="agregar-carrito" data-nombre="Chicha Morada" data-precio="12.00">Agregar</button>
+                </div>
+                <div class="item bebida card">
+                    <img src="Imágenes/Limonada.png" alt="Limonada">
+                    <h3>Limonada</h3>
+                    <p>S/ 15.00</p>
+                    <button class="agregar-carrito" data-nombre="Limonada" data-precio="15.00">Agregar</button>
+                </div>
+                <div class="item bebida card">
+                    <img src="Imágenes/Maracuya.jpg" alt="Maracuya">
+                    <h3>Maracuyá</h3>
+                    <p>S/ 19.00</p>
+                    <button class="agregar-carrito" data-nombre="Maracuyá" data-precio="19.00">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/Cannoli.jpeg" alt="Cannoli">
+                    <h3>Cannoli</h3>
+                    <p>S/ 17.00</p>
+                    <button class="agregar-carrito" data-nombre="Cannoli" data-precio="17.00">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/TartaTatin.jpeg" alt="Tarta Tatin">
+                    <h3>Tarta Tatín</h3>
+                    <p>S/ 25.00</p>
+                    <button class="agregar-carrito" data-nombre="Tarta Tatín" data-precio="25.00">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/GaletteDeFrutas.jpeg" alt="Galette de Frutas">
+                    <h3>Galette de Frutas</h3>
+                    <p>S/ 15.00</p>
+                    <button class="agregar-carrito" data-nombre="Galette de Frutas" data-precio="15.00">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/Palmieres.jpeg" alt="Palmieres">
+                    <h3>Palmieres</h3>
+                    <p>S/ 9.50</p>
+                    <button class="agregar-carrito" data-nombre="Palmieres" data-precio="9.50">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/BudínDePan.jpeg" alt="Budín de Pan">
+                    <h3>Budín de Pan</h3>
+                    <p>S/ 12.00</p>
+                    <button class="agregar-carrito" data-nombre="Budín de Pan" data-precio="12.00">Agregar</button>
+                </div>
+                <div class="item postre card">
+                    <img src="Imágenes/PastelDeLava.jpeg" alt="Pastel de Lava">
+                    <h3>Pastel de Lava</h3>
+                    <p>S/ 21.00</p>
+                    <button class="agregar-carrito" data-nombre="Pastel de Lava" data-precio="21.00">Agregar</button>
+                </div>
+            </div>
+            <div id="carrito-panel" class="carrito-panel oculto">
+                <div class="contenido-panel">
+                    <span class="cerrar-panel">&times;</span>
+                    <h3>Tu carrito</h3>
+                    <ul id="lista-carrito"></ul>
+                    <p id="total">Total: S/ 0.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <li style="--clr: #1877f2">
+                    <a data-url="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li style="--clr: #ff0000">
+                    <a data-url="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li style="--clr: #1da1f2">
+                    <a data-url="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li style="--clr: #c32aa3">
+                    <a data-url="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li style="--clr: #25d366">
+                    <a data-url="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="JavaScript/Script.js"></script>
+</body>
+
+</html>
