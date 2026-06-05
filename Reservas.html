@@ -25,64 +25,169 @@
             </ul>
         </nav>
     </header>
-    <section class="reservations">
-        <h2>Reserva tu mesa</h2>
+    <div class="leyenda">
+        <span>
+            <div class="estado disponible"></div> Disponible
+        </span>
+        <span>
+            <div class="estado ocupada"></div> Ocupada
+        </span>
+        <span>
+            <div class="estado reservada"></div> Reservada
+        </span>
+    </div>
 
-        <div class="reserva-form">
-            <input type="date" id="fecha">
-            <input type="time" id="hora">
-            <select id="personas">
-                <option value="2">2 personas</option>
-                <option value="4">4 personas</option>
-                <option value="6">6 personas</option>
-            </select>
+    <div class="mapa-mesas">
+
+        <!-- MESAS PARA 2 PERSONAS -->
+        <h3 class="grupo-mesas">Mesas para 2 personas</h3>
+
+        <div class="mesa disponible" data-id="1" data-capacidad="2">
+            <span class="numero-mesa">M1</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="20" y="30" width="60" height="40" rx="10" />
+                <circle cx="50" cy="15" r="8" />
+                <circle cx="50" cy="85" r="8" />
+            </svg>
         </div>
 
-        <div class="mapa-mesas">
-
-            <div class="mesa disponible" data-id="1" data-capacidad="2">
-                <svg viewBox="0 0 100 100">
-                    <rect x="20" y="30" width="60" height="40" rx="10" />
-                    <circle cx="50" cy="15" r="8" />
-                    <circle cx="50" cy="85" r="8" />
-                </svg>
-            </div>
-
-            <div class="mesa ocupada" data-id="2" data-capacidad="4">
-                <svg viewBox="0 0 100 100">
-                    <rect x="15" y="25" width="70" height="50" rx="10" />
-                    <circle cx="50" cy="10" r="7" />
-                    <circle cx="50" cy="90" r="7" />
-                    <circle cx="10" cy="50" r="7" />
-                    <circle cx="90" cy="50" r="7" />
-                </svg>
-            </div>
-
-            <div class="mesa disponible" data-id="3" data-capacidad="4">
-                <svg viewBox="0 0 100 100">
-                    <rect x="15" y="25" width="70" height="50" rx="10" />
-                    <circle cx="50" cy="10" r="7" />
-                    <circle cx="50" cy="90" r="7" />
-                    <circle cx="10" cy="50" r="7" />
-                    <circle cx="90" cy="50" r="7" />
-                </svg>
-            </div>
-
-            <div class="mesa reservada" data-id="4" data-capacidad="6">
-                <svg viewBox="0 0 100 100">
-                    <rect x="15" y="25" width="70" height="50" rx="10" />
-                    <circle cx="25" cy="10" r="6" />
-                    <circle cx="75" cy="10" r="6" />
-                    <circle cx="5" cy="50" r="6" />
-                    <circle cx="95" cy="50" r="6" />
-                    <circle cx="25" cy="90" r="6" />
-                    <circle cx="75" cy="90" r="6" />
-                </svg>
-            </div>
-
+        <div class="mesa disponible" data-id="2" data-capacidad="2">
+            <span class="numero-mesa">M2</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="20" y="30" width="60" height="40" rx="10" />
+                <circle cx="50" cy="15" r="8" />
+                <circle cx="50" cy="85" r="8" />
+            </svg>
         </div>
 
-        <button class="btn" id="confirmar">Confirmar reserva</button>
+        <div class="mesa ocupada" data-id="3" data-capacidad="2">
+            <span class="numero-mesa">M3</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="20" y="30" width="60" height="40" rx="10" />
+                <circle cx="50" cy="15" r="8" />
+                <circle cx="50" cy="85" r="8" />
+            </svg>
+        </div>
+
+        <div class="mesa reservada" data-id="4" data-capacidad="2">
+            <span class="numero-mesa">M4</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="20" y="30" width="60" height="40" rx="10" />
+                <circle cx="50" cy="15" r="8" />
+                <circle cx="50" cy="85" r="8" />
+            </svg>
+        </div>
+
+        <!-- MESAS PARA 4 PERSONAS -->
+        <h3 class="grupo-mesas">Mesas para 4 personas</h3>
+
+        <div class="mesa disponible" data-id="5" data-capacidad="4">
+            <span class="numero-mesa">M5</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="50" cy="10" r="7" />
+                <circle cx="50" cy="90" r="7" />
+                <circle cx="10" cy="50" r="7" />
+                <circle cx="90" cy="50" r="7" />
+            </svg>
+        </div>
+
+        <div class="mesa disponible" data-id="6" data-capacidad="4">
+            <span class="numero-mesa">M6</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="50" cy="10" r="7" />
+                <circle cx="50" cy="90" r="7" />
+                <circle cx="10" cy="50" r="7" />
+                <circle cx="90" cy="50" r="7" />
+            </svg>
+        </div>
+
+        <div class="mesa ocupada" data-id="7" data-capacidad="4">
+            <span class="numero-mesa">M7</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="50" cy="10" r="7" />
+                <circle cx="50" cy="90" r="7" />
+                <circle cx="10" cy="50" r="7" />
+                <circle cx="90" cy="50" r="7" />
+            </svg>
+        </div>
+
+        <div class="mesa reservada" data-id="8" data-capacidad="4">
+            <span class="numero-mesa">M8</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="50" cy="10" r="7" />
+                <circle cx="50" cy="90" r="7" />
+                <circle cx="10" cy="50" r="7" />
+                <circle cx="90" cy="50" r="7" />
+            </svg>
+        </div>
+
+        <!-- MESAS PARA 6 PERSONAS -->
+        <h3 class="grupo-mesas">Mesas para 6 personas</h3>
+
+        <div class="mesa disponible" data-id="9" data-capacidad="6">
+            <span class="numero-mesa">M9</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="25" cy="10" r="6" />
+                <circle cx="75" cy="10" r="6" />
+                <circle cx="5" cy="50" r="6" />
+                <circle cx="95" cy="50" r="6" />
+                <circle cx="25" cy="90" r="6" />
+                <circle cx="75" cy="90" r="6" />
+            </svg>
+        </div>
+
+        <div class="mesa disponible" data-id="10" data-capacidad="6">
+            <span class="numero-mesa">M10</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="25" cy="10" r="6" />
+                <circle cx="75" cy="10" r="6" />
+                <circle cx="5" cy="50" r="6" />
+                <circle cx="95" cy="50" r="6" />
+                <circle cx="25" cy="90" r="6" />
+                <circle cx="75" cy="90" r="6" />
+            </svg>
+        </div>
+
+        <div class="mesa ocupada" data-id="11" data-capacidad="6">
+            <span class="numero-mesa">M11</span>
+            <svg viewBox="0 0 100 100">
+                <rect x="15" y="25" width="70" height="50" rx="10" />
+                <circle cx="25" cy="10" r="6" />
+                <circle cx="75" cy="10" r="6" />
+                <circle cx="5" cy="50" r="6" />
+                <circle cx="95" cy="50" r="6" />
+                <circle cx="25" cy="90" r="6" />
+                <circle cx="75" cy="90" r="6" />
+            </svg>
+        </div>
+
+        <!-- MESA VIP PARA 8 PERSONAS -->
+        <h3 class="grupo-mesas">Mesa VIP (8 personas)</h3>
+
+        <div class="mesa disponible vip" data-id="12" data-capacidad="8">
+            <span class="numero-mesa">VIP</span>
+            <svg viewBox="0 0 120 120">
+                <ellipse cx="60" cy="60" rx="40" ry="25" />
+                <circle cx="60" cy="15" r="6" />
+                <circle cx="95" cy="30" r="6" />
+                <circle cx="105" cy="60" r="6" />
+                <circle cx="95" cy="90" r="6" />
+                <circle cx="60" cy="105" r="6" />
+                <circle cx="25" cy="90" r="6" />
+                <circle cx="15" cy="60" r="6" />
+                <circle cx="25" cy="30" r="6" />
+            </svg>
+        </div>
+
+    </div>
+
+    <button class="btn" id="confirmar">Confirmar reserva</button>
     </section>
     <footer>
         <div class="container">
