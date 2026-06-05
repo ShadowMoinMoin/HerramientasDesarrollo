@@ -4,7 +4,6 @@ const confirmarBtn = document.getElementById('confirmar');
 
 let mesaSeleccionada = null;
 
-// Seleccionar mesa
 mesas.forEach(mesa => {
     mesa.addEventListener('click', () => {
 
@@ -12,7 +11,6 @@ mesas.forEach(mesa => {
             return;
         }
 
-        // Validar capacidad
         const personas = parseInt(personasSelect.value);
         const capacidad = parseInt(mesa.dataset.capacidad);
 
@@ -21,7 +19,6 @@ mesas.forEach(mesa => {
             return;
         }
 
-        // Limpiar selección anterior
         mesas.forEach(m => m.classList.remove('seleccionada'));
 
         mesa.classList.add('seleccionada');
@@ -29,7 +26,6 @@ mesas.forEach(mesa => {
     });
 });
 
-// Confirmar reserva (frontend demo)
 confirmarBtn.addEventListener('click', () => {
     const fecha = document.getElementById('fecha').value;
     const hora = document.getElementById('hora').value;

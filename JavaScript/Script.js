@@ -55,5 +55,3 @@ window.addEventListener("click", function (e) {
         panelCarrito.classList.add("oculto");
     }
 });
-
-
