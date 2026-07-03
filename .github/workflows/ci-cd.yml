@@ -1,0 +1,65 @@
+name: CI/CD Restaurante
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+
+  validate:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Validar HTML
+        run: htmlhint "**/*.html"
+
+      - name: Crear carpeta deploy
+        run: |
+          mkdir public
+          cp -r * public/ || true
+          rm -rf public/.git
+          rm -rf public/.github
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+
+    needs: validate
+
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
